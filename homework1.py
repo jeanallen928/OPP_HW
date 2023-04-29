@@ -14,3 +14,16 @@ class Car():
 
     def get_speed(self):
         return self.speed
+
+
+my_car = Car("new_model", "red")
+
+print(my_car.model)
+print(my_car.color)
+print(my_car.speed)
+
+my_car.accelerate(20)
+print(my_car.get_speed())
+
+my_car.brake(10)
+print(my_car.get_speed())

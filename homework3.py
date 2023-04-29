@@ -7,8 +7,8 @@ class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
 
-    def get_area(self, radius):
-        return 3.14 * (radius**2)
+    def get_area(self):
+        return 3.14 * (self.radius**2)
 
 
 class Rectangle(Shape):
@@ -18,3 +18,12 @@ class Rectangle(Shape):
 
     def get_area(self):
         return self.length * self.width
+
+
+won = Circle(1)
+nemo = Rectangle(2, 3)
+
+print(won.radius)
+
+print(won.get_area())
+print(nemo.get_area())
