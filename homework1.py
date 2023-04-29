@@ -5,10 +5,12 @@ class Car():
         self.speed = 0
 
     def accelerate(self, amount):
-        return self.speed + amount
+        self.speed += amount
 
     def brake(self, amount):
-        return self.speed - amount
+        self.speed -= amount
+        if self.speed < 0:
+            self.speed = 0
 
     def get_speed(self):
         return self.speed
